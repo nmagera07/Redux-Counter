@@ -15,11 +15,12 @@ class Counter extends Component {
     incrementAsync = () => {
         // Stretch Problem: Implement an increment function that
         // increments after waiting for one second
-        let delay = this.props.increment(this.props.count)
-        setTimeout(function() { 
-            return delay
+        setTimeout(() => {
+            this.props.increment(this.props.count)
         }, 1000)
     };
+
+    
 
     
 
